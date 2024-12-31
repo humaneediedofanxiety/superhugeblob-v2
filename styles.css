@@ -1,0 +1,320 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 24px;
+}
+
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  margin-top: 0px;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.text-content h1 {
+  font-size: 24px;
+}
+
+.text-content p {
+  font-size: 14px;
+}
+
+.text-content a {
+  text-decoration: none;
+}
+
+.text-content a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px;
+  padding: 10px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.hr {
+  padding: 6px;
+  background-color: blue;
+  margin-top: 0px;
+}
+
+.hr > p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content div div ul {
+  list-style: none;
+}
+
+hr {
+  margin-top: 0px;
+}
+
+.pinned {
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: whitesmoke;
+}
+
+.pinned h3 {
+  font-size: 16px;
+  background-color: blue;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px;
+  padding: 4px;
+  margin: -15px;
+}
+
+.pinned-list > ul > li > a:visited,
+.pinned-list > ul > li > a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.pinned-list > ul > li > a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.pinned a {
+  display: block;
+  text-decoration: underline;
+  margin: 5px 0;
+}
+
+.pinned-list {
+  padding: 24px 16px 0px 16px;
+}
+
+.pinned a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.experience {
+  width: 70%;
+  border: 1px;
+  padding: 15px;
+}
+
+.experience h2 {
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 1px solid;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+.experience ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  body {
+    padding: 16px;
+  }
+  .hr {
+    padding: 8px 10px;
+    margin: -16px;
+    margin-bottom: 0px;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 12px;
+  }
+  .text-content {
+    padding: 0px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pinned {
+    width: 100%;
+  }
+
+  .experience {
+    width: 100%;
+  }
+
+  footer {
+    margin-bottom: -12px;
+  }
+}
+
+.bold {
+  font-weight: 500;
+  color: blue;
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+  .header {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .header {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .profile-picture {
+    width: 180px;
+    height: 180px;
+  }
+
+  .text-content > p {
+    font-size: 15px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .pinned {
+    width: 30%;
+    padding-bottom: 48px;
+  }
+
+  .experience {
+    width: 60%;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .pinned {
+    width: 20%;
+  }
+  .experience {
+    width: 70%;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
